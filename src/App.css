@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  padding: .8rem 2rem;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  font-size: .8em;
+  padding: 0% 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav__links-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.header-text{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  gap: 2rem;
+}
+
+.header{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: inset 3px 2px 5px #888888;
+  background-color: #fff;
+  height: 90vh;
+  padding: 1.2rem 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.image-box{
+  width: 50vw;
+}
+
+.btn-action{
+  background-color: #FF6347;
+}
+
+.port-cont{
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  gap: 3rem;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.logo-container:first-child{
+  border-left: .1rem solid #FF6347;
+  border-top: .1rem solid #FF6347;
+  padding: 1.5rem;
+}
+
+.logo-container:last-child{
+  border-right: .1rem solid #FF6347;
+  border-bottom: .1rem solid #FF6347;
+  padding: 1.5rem;
+}
+
+.logo-container img{
+  height: 60vh;
+}
+
+.logo-container h2{
+  padding-bottom: .5rem;
+}
+
+.port-container h1{
+   text-align: center;
+   padding: 2rem 0;
+   background: #ee0979;
+    background: -webkit-linear-gradient(to right, #ff6a00, #FF4433);
+    background: linear-gradient(to right, #ff6a00, #FF4433 ); 
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-size: 100%;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .header-text{
+    width: 100vw;
+  flex-wrap: wrap;
+  text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .image-box{
+    width: 100vw;
+    height: 15rem;
+    padding: 2rem 0%;
   }
 }
