@@ -1,35 +1,32 @@
 import React from "react";
-import {navLink} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 import { FaDownload } from "react-icons/fa";
 
 function NavBar() {
     return (
         <nav className="navbar">
            <div className="nav__links-container">
-            <navLink
+            <NavLink
              to="/" className = {
-                ({isActive})=>(isActive ? "link-active" : "nav-link")
-             }>Home</navLink>
-             <navLink
+                ({isActive})=>(isActive ? "nav-link link-active" : "nav-link")
+             }>Home</NavLink>
+             <NavLink
              to="Portfolio" className = {
-                ({isActive})=>( isActive ? "link-active" : "nav-link")
-             }>Portfolio</navLink>
+                ({isActive})=>( isActive ? "nav-link link-active" : "nav-link")
+             }>Portfolio</NavLink>
 
-            <navLink
+            <NavLink
              to="About" className = {
-                ({isActive})=>( isActive ? "link-active" : "nav-link")
-             }>About</navLink>
+                ({isActive})=>( isActive ? "nav-link link-active" : "nav-link")
+             }>About</NavLink>
 
-            <navLink
+            <NavLink
              to="Contact" className = {
-                ({isActive})=>( isActive ? "link-active" : "nav-link")
-             }>Contact Me</navLink>
+                ({isActive})=>( isActive ? "nav-link link-active" : "nav-link")
+             }>Contact Me</NavLink>
              </div>
 
-             <navLink
-             to="Contact" className = {
-                ({isActive})=>( isActive ? "link-active" : "nav-link")
-             }><button className="btn-action">Download CV <FaDownload /></button></navLink>
+             <NavLink><button className="btn-action">Download CV <FaDownload /></button></NavLink>
         </nav>
     )
 }

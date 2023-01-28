@@ -18,13 +18,16 @@ button{
   background-color: #fff;
   font-size: .8em;
   padding: 0% 2rem;
+  box-shadow: 2px 3px 5px #888888;
+  position: sticky;
+  z-index: 1000;
 }
 
 .nav__links-container{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 50%;
+  width: 30vw;
 }
 
 .header-text{
@@ -98,6 +101,132 @@ img{
     background-size: 100%;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+.text-box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40vw;
+}
+
+.text-box .btn-normal{
+  display: inline-block;
+}
+
+.about-cont{
+  padding: 2.3rem;
+}
+
+.socials-container{
+  height: 20vh;
+  box-shadow: inset .1rem .2rem .3rem #888888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  gap: 2rem;
+}
+
+.fb:hover{
+   color: #3b5998;
+}
+
+.insta:hover{
+  color: #feda75;
+}
+
+.twitter:hover{
+  color: #3b5998;
+}
+
+.linked:hover{
+  color: #3b5998;
+}
+
+.copy-container{
+  height: 10vh;
+  font-size: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #888888;
+}
+
+.about__page-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.about__page-container h1{
+  background: #ee0979;
+  background: -webkit-linear-gradient(to right, #ff6a00, #FF4433);
+  background: linear-gradient(to right, #ff6a00, #FF4433 ); 
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  padding: 2rem 0;
+}
+
+.about__page-container .text-box{
+  width: 80vw;
+}
+
+.about__page-container .text-box h1{
+  text-align: center;
+}
+
+.about__page-container .image-cont{
+  width: 50vw;
+  height: fit-content;
+}
+
+.nav-link{
+  color: #888888;
+  text-decoration: none;
+  padding: 1rem;
+
+}
+
+.nav-link:hover{
+  background-color: #ff6a001c;
+  border-bottom: 2px solid #ff6a00;
+}
+
+
+ .link-active{
+  background-color: #ff6a001c;
+  border-bottom: 2px solid #ff6a00;
+}
+
+.Contact-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 2rem ;
+  height: max-content;
+  gap: 2rem;
+}
+
+.contact__inputs-cont{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+} 
+
+.contact__inputs-cont input{
+  padding: 1rem;
+}
+
+.contact__inputs-cont textarea{
+  padding: 1rem;
 }
 
 
