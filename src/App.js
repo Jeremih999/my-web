@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SharedLayout from './components/SharedLayout';
 import Portfolio from './Pages/Portfolio';
 import Contact from './Pages/Contact';
+import SingleImage from './Pages/SingleImage';
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
              <Route index element={<Home />} />
              <Route path='about' element={<About />} />
              <Route path='portfolio' element={<Portfolio />} />
+             <Route path='portfolio/portfolio/:ImageId' element={<SingleImage />} />
              <Route path='Contact' element={<Contact />} />
           </Route>
        </Routes>

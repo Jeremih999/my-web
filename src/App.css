@@ -19,8 +19,8 @@ button{
   font-size: .8em;
   padding: 0% 2rem;
   box-shadow: 2px 3px 5px #888888;
-  position: sticky;
-  z-index: 1000;
+  /* position: sticky;
+  z-index: 1000; */
 }
 
 .nav__links-container{
@@ -227,6 +227,42 @@ img{
 
 .contact__inputs-cont textarea{
   padding: 1rem;
+}
+
+.portfolio__img-cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.portfolio-container{
+  padding: 2.5rem;
+}
+
+.portfolio-container select{
+  padding: .8rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* .portfolio__img-cont img{
+  height: 18vh;
+} */
+
+.slide-container{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.arrow{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  color: #FF6347;
 }
 
 
